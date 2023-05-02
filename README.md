@@ -11,7 +11,7 @@ Nav Bar - Entrega 2
 To deploy this project run 
 
 ```bash
-  landing-page-etxsymqk1-danielagonzalez88.vercel.app
+  landing-page-5qusz8kaq-danielagonzalez88.vercel.app
 ```
 
 

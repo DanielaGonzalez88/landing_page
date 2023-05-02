@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 :root {
+  /* Colors */
   --color-natural: #dfd8bf;
   --color-beige: #d1be98;
   --color-coral: #ef940c;
@@ -9,59 +10,130 @@
   --color-turquesa: #2c7265;
   --color-marron: #5f3623;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
+  list-style: none;
 }
-
+/* NavBar */
 header {
-  background-color: var(--color-natural);
+  background-color: var(--color-beige);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 15px;
+  padding: 9px 30px;
+  height: 65px;
   box-shadow: 0 5px 10px 0px gray;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
-
-body {
-  font-family: Montserrat;
-  font-size: 1.1rem;
-  /* Posible fondo trama 
-  background-image: url(/E2_Nav/assets/trama2.jpg);
-  background-size: 800px; 
-  */
+.logo {
+  height: 110%;
 }
-
-nav {
-  display: flex;
-}
-
 .list_nav {
   display: flex;
-  gap: 20px;
-  width: 500px;
+  gap: 30px;
   justify-content: space-around;
   align-items: center;
+  margin-right: 40px;
 }
-
-.link_nav {
-  list-style: none;
-}
-
 .link_nav:hover {
   color: #2c7265;
   cursor: pointer;
 }
-
+.link_nav:active {
+  color: var(--color-celeste);
+}
+.contacto:active {
+  color: black;
+}
 .contacto {
   background-color: var(--color-celeste);
   border-radius: 20px;
   padding: 5px;
   box-shadow: 1px 1px 5px 0 var(--color-turquesa);
 }
-
-#logo {
-  width: 110px;
+main {
+  background-color: var(--color-natural);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+  width: 100%;
+}
+/* Section hero*/
+#hero,
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 70px;
+  max-width: 1200px;
+  gap: 50px;
+  background-color: var(--color-natural);
+}
+#hero {
+  padding-top: 70px;
+  justify-content: space-around;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.info h1 {
+  font-size: 36px;
+  font-weight: 800;
+  min-width: 500px;
+  text-transform: uppercase;
+}
+.info p {
+  font-size: 16px;
+  width: 80%;
+}
+.info p > span {
+  font-weight: 800;
+}
+.button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+.info a {
+  background-color: var(--color-coral);
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--color-marron);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 3px solid var(--color-coral);
+  box-shadow: 1px 1px 5px 0 gray;
+}
+.info a:hover {
+  color: var(--color-turquesa);
+}
+.info a:active {
+  color: black;
+}
+.info a:last-child {
+  border: 3px solid var(--color-naranja);
+  background-color: var(--color-natural);
+}
+#hero img {
+  width: 450px;
+}
+/* Section info */
+.description {
+  text-align: center;
+  font-size: 20px;
+  max-width: 80%;
 }

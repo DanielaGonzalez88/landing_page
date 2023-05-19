@@ -10,6 +10,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
   </head>
   <body>
     <header>
@@ -21,18 +39,19 @@
       <nav class="nav">
         <label for="toggle"><i class="fa-solid fa-bars"></i></label>
         <input type="checkbox" id="toggle" />
+        <div class="overlay"></div>
         <ul class="list_nav">
-          <li class="link_nav"><a href="#"></a> Nosotros</li>
-          <li class="link_nav"><a href="#"></a> Productos</li>
-          <li class="link_nav"><a href="#"></a> Servicios</li>
-          <li class="link_nav contacto"><a href="#"></a> Conctacto</li>
+          <li class="link_nav"><a href="#hero">Nosotros</a></li>
+          <li class="link_nav"><a href="#">Productos</a></li>
+          <li class="link_nav"><a href="#advantages">Ventajas</a></li>
+          <li class="link_nav contacto"><a href="#contact">Conctacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="hero">
         <div class="info">
-          <h1>Un coctel siempre se disfruta más en un Tiki Mug</h1>
+          <h1>Un coctel siempre se disfruta más en un <span>Tiki Mug</span></h1>
           <p>
             Si alguna vez te imaginas sentado junto al mar bajo el sol sin
             preocupaciones, es probable que tengas un <span>Tiki Mug</span> con
@@ -56,7 +75,7 @@
           </p>
         </div>
       </section>
-      <section class="advantages">
+      <section id="advantages" class="advantages">
         <h2>Ventajas de nuestros mugs</h2>
         <p>
           Si buscas una pieza de cerámica única, práctica y versátil para
@@ -114,7 +133,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="info-contact-container">
           <h2>Contactanos</h2>
           <div class="info-contact">
@@ -155,7 +174,6 @@
             <a href="#"><img src="./assets/face.png" alt="facebook" /></a>
           </div>
         </div>
-        <!-- <div class="mapa"><img src="./assets/map.jpg" alt="mapa" /></div> -->
         <div class="mapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84092.79404423067!2d-157.88524472872996!3d21.33425583157106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00183b8cc3464d%3A0x4b28f55ff3a7976c!2sHonolulu%2C%20Haw%C3%A1i%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1684197592024!5m2!1ses-419!2sar"

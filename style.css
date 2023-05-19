@@ -552,6 +552,7 @@ main {
     gap: 50px;
     transform: translateY(-200%);
     transition: transform 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+    display: none;
   }
   .nav i {
     display: block;

@@ -11,7 +11,7 @@ Entrega 4
 To deploy this project run 
 
 ```bash
-  landing-page-mwl5q5bp6-danielagonzalez88.vercel.app
+  landing-page-7mbe4risj-danielagonzalez88.vercel.app
 ```
 
 
